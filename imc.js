@@ -7,7 +7,7 @@ function imc() {
   const resultado = document.getElementById("resultado");
 
   if (nome !== "" && altura !== "" && peso !== "") {
-    const valorImc = peso / (altura * altura);
+    const valorImc = (peso / (altura * altura)).toFixed(1);
 
     let classificacao = "";
 
